@@ -3,22 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+    <meta name="author" content="Felipe Alencar" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="description" content="Frontend Mentor | Notifications page exercise using HTML, CSS and JS" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Plus+Jakarta+Sans:wght@500;800&display=swap"
-      rel="stylesheet"
-    />
     <title>Frontend Mentor | Notifications page</title>
-
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -43,15 +37,17 @@
               <div class="notifications__container notifications__unread">
                 <div class="notifications__profile-container">
                   <img
+                    width="40px"
+                    height="40px"
                     src="./assets/images/avatar-mark-webber.webp"
                     alt="Mark Webber"
                   />
                 </div>
                 <div>
                   <p>
-                    <span
+                    <h2
                       class="notifications__user notifications__highlight-hover--dark-blue"
-                      >Mark Webber</span
+                      >Mark Webber</h2
                     >
                     <span class="notifications__common-text">
                       reacted to your recent post
@@ -70,15 +66,17 @@
               <div class="notifications__container notifications__unread">
                 <div class="notifications__profile-container">
                   <img
+                    width="40px"
+                    height="40px"
                     src="./assets/images/avatar-angela-gray.webp"
                     alt="Angela Gray"
                   />
                 </div>
                 <div>
                   <p>
-                    <span
+                    <h2
                       class="notifications__user notifications__highlight-hover--dark-blue"
-                      >Angela Gray</span
+                      >Angela Gray</h2
                     >
                     <span class="notifications__common-text">
                       followed you
@@ -93,15 +91,17 @@
               <div class="notifications__container notifications__unread">
                 <div class="notifications__profile-container">
                   <img
+                    width="40px"
+                    height="40px"
                     src="./assets/images/avatar-jacob-thompson.webp"
                     alt="Jacob Thompson"
                   />
                 </div>
                 <div>
                   <p>
-                    <span
+                    <h2
                       class="notifications__user notifications__highlight-hover--dark-blue"
-                      >Jacob Thompson</span
+                      >Jacob Thompson</h2
                     >
                     <span class="notifications__common-text">
                       has joined your group
@@ -120,15 +120,17 @@
               <div class="notifications__container">
                 <div class="notifications__profile-container">
                   <img
+                    width="40px"
+                    height="40px"
                     src="./assets/images/avatar-rizky-hasanuddin.webp"
                     alt="Rizky Hasanuddin"
                   />
                 </div>
                 <div>
                   <p>
-                    <span
+                    <h2
                       class="notifications__user notifications__highlight-hover--dark-blue"
-                      >Rizky Hasanuddin</span
+                      >Rizky Hasanuddin</h2
                     >
                     <span class="notifications__common-text">
                       sent you a private message
@@ -147,15 +149,17 @@
               <div class="notifications__container">
                 <div class="notifications__profile-container">
                   <img
+                    width="40px"
+                    height="40px"
                     src="./assets/images/avatar-kimberly-smith.webp"
                     alt="Kimberly Smith"
                   />
                 </div>
                 <div>
                   <p>
-                    <span
+                    <h2
                       class="notifications__user notifications__highlight-hover--dark-blue"
-                      >Kimberly Smith</span
+                      >Kimberly Smith</h2
                     >
                     <span class="notifications__common-text">
                       commented on your picture
@@ -164,6 +168,8 @@
                   <span class="notifications__time">1 week ago</span>
                 </div>
                 <img
+                  width="40px"
+                  height="40px"
                   class="notifications__commentary-img"
                   src="./assets/images/image-chess.webp"
                   alt="image-chess"
@@ -174,15 +180,17 @@
               <div class="notifications__container">
                 <div class="notifications__profile-container">
                   <img
+                    width="40px"
+                    height="40px"
                     src="./assets/images/avatar-nathan-peterson.webp"
                     alt="Nathan Peterson"
                   />
                 </div>
                 <div>
                   <p>
-                    <span
+                    <h2
                       class="notifications__user notifications__highlight-hover--dark-blue"
-                      >Nathan Peterson</span
+                      >Nathan Peterson</h2
                     >
                     <span class="notifications__common-text">
                       reacted to your recent post
@@ -200,15 +208,17 @@
               <div class="notifications__container">
                 <div class="notifications__profile-container">
                   <img
+                    width="40px"
+                    height="40px"
                     src="./assets/images/avatar-anna-kim.webp"
                     alt="Anna Kim"
                   />
                 </div>
                 <div>
                   <p>
-                    <span
+                    <h2
                       class="notifications__user notifications__highlight-hover--dark-blue"
-                      >Anna Kim</span
+                      >Anna Kim</h2
                     >
                     <span class="notifications__common-text">
                       left the group
@@ -239,7 +249,7 @@
       </p>
     </footer>
     
-    <script>
+    <script defer>
       function markAllAsRead() {
         const unreadNotifications = [
           ...document.querySelectorAll(".notifications__unread"),
