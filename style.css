@@ -121,7 +121,7 @@ li {
   width: 36px;
   height: 36px;
   cursor: pointer;
-  margin-left: 16px;
+  margin-left: auto;
 }
 .notifications__unread {
   background-color: var(--very-light-grayish-blue);
