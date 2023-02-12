@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Notifications page</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <main class="notifications">
+        <header class="notifications__header">
+          <h1 class="notifications__title">
+            Notifications
+
+            <span class="notifications__count">3</span>
+          </h1>
+          <button
+            class="notifications__all-read-btn notifications__highlight-hover--dark-blue"
+            onclick="markAllAsRead()"
+          >
+            Mark all as read
+          </button>
+        </header>
+        <section>
+          <ul class="notifications__list">
+            <li class="notifications__item">
+              <div class="notifications__container notifications__unread">
+                <div class="notifications__profile-container">
+                  <img
+                    src="./assets/images/avatar-mark-webber.webp"
+                    alt="Mark Webber"
+                  />
+                </div>
+                <div>
+                  <p>
+                    <span
+                      class="notifications__user notifications__highlight-hover--dark-blue"
+                      >Mark Webber</span
+                    >
+                    <span class="notifications__common-text">
+                      reacted to your recent post
+                    </span>
+                    <span
+                      class="notifications__subject notifications__highlight-hover--dark-blue"
+                      >My first tournament today!
+                    </span>
+                    <span class="notifications__unread--circle"></span>
+                  </p>
+                  <span class="notifications__time">1m ago</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifications__item">
+              <div class="notifications__container notifications__unread">
+                <div class="notifications__profile-container">
+                  <img
+                    src="./assets/images/avatar-angela-gray.webp"
+                    alt="Angela Gray"
+                  />
+                </div>
+                <div>
+                  <p>
+                    <span
+                      class="notifications__user notifications__highlight-hover--dark-blue"
+                      >Angela Gray</span
+                    >
+                    <span class="notifications__common-text">
+                      followed you
+                    </span>
+                    <span class="notifications__unread--circle"></span>
+                  </p>
+                  <span class="notifications__time">5m ago</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifications__item">
+              <div class="notifications__container notifications__unread">
+                <div class="notifications__profile-container">
+                  <img
+                    src="./assets/images/avatar-jacob-thompson.webp"
+                    alt="Jacob Thompson"
+                  />
+                </div>
+                <div>
+                  <p>
+                    <span
+                      class="notifications__user notifications__highlight-hover--dark-blue"
+                      >Jacob Thompson</span
+                    >
+                    <span class="notifications__common-text">
+                      has joined your group
+                    </span>
+                    <span
+                      class="notifications__subject notifications__highlight--dark-blue"
+                      >Chess Club
+                    </span>
+                    <span class="notifications__unread--circle"></span>
+                  </p>
+                  <span class="notifications__time">1m ago</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifications__item">
+              <div class="notifications__container">
+                <div class="notifications__profile-container">
+                  <img
+                    src="./assets/images/avatar-rizky-hasanuddin.webp"
+                    alt="Rizky Hasanuddin"
+                  />
+                </div>
+                <div>
+                  <p>
+                    <span
+                      class="notifications__user notifications__highlight-hover--dark-blue"
+                      >Rizky Hasanuddin</span
+                    >
+                    <span class="notifications__common-text">
+                      sent you a private message
+                    </span>
+                  </p>
+                  <span class="notifications__time">5 days ago</span>
+                  <p class="notifications__private-message">
+                    Hello, thanks for setting up the Chess Club. I've been a
+                    member for a few weeks now and I'm already having lots of
+                    fun and improving my game.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="notifications__item">
+              <div class="notifications__container">
+                <div class="notifications__profile-container">
+                  <img
+                    src="./assets/images/avatar-kimberly-smith.webp"
+                    alt="Kimberly Smith"
+                  />
+                </div>
+                <div>
+                  <p>
+                    <span
+                      class="notifications__user notifications__highlight-hover--dark-blue"
+                      >Kimberly Smith</span
+                    >
+                    <span class="notifications__common-text">
+                      commented on your picture
+                    </span>
+                  </p>
+                  <span class="notifications__time">1 week ago</span>
+                </div>
+                <img
+                  class="notifications__commentary-img"
+                  src="./assets/images/image-chess.webp"
+                  alt="image-chess"
+                />
+              </div>
+            </li>
+            <li class="notifications__item">
+              <div class="notifications__container">
+                <div class="notifications__profile-container">
+                  <img
+                    src="./assets/images/avatar-nathan-peterson.webp"
+                    alt="Nathan Peterson"
+                  />
+                </div>
+                <div>
+                  <p>
+                    <span
+                      class="notifications__user notifications__highlight-hover--dark-blue"
+                      >Nathan Peterson</span
+                    >
+                    <span class="notifications__common-text">
+                      reacted to your recent post
+                    </span>
+                    <span
+                      class="notifications__subject notifications__highlight-hover--dark-blue"
+                      >5 end-game strategies to increase your win rates
+                    </span>
+                  </p>
+                  <span class="notifications__time">2 weeks ago</span>
+                </div>
+              </div>
+            </li>
+            <li class="notifications__item">
+              <div class="notifications__container">
+                <div class="notifications__profile-container">
+                  <img
+                    src="./assets/images/avatar-anna-kim.webp"
+                    alt="Anna Kim"
+                  />
+                </div>
+                <div>
+                  <p>
+                    <span
+                      class="notifications__user notifications__highlight-hover--dark-blue"
+                      >Anna Kim</span
+                    >
+                    <span class="notifications__common-text">
+                      left the group
+                    </span>
+                    <span
+                      class="notifications__subject notifications__highlight--dark-blue"
+                      >Chess Club
+                    </span>
+                  </p>
+                  <span class="notifications__time">2 weeks ago</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <p class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a target="_blank" href="https://www.frontendmentor.io/profile/alencarftc"
+        >Felipe Alencar</a
+      >.
+    </p>
+
+    <script>
+      function markAllAsRead() {
+        const unreadNotifications = [
+          ...document.querySelectorAll(".notifications__unread"),
+        ];
+
+        unreadNotifications.forEach((el) =>
+          el.classList.remove("notifications__unread")
+        );
+        document.querySelector(".notifications__count").remove();
+      }
+    </script>
+  </body>
+</html>
