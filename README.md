@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/notifications-page-using-basic-html-css-and-js-2bhmItWeR4)
+- Live Site URL: [Live site URL](https://alencarftc.github.io/fm-notifications-page)
 
 ## My process
 
